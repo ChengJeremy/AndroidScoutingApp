@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jeremy.androidscoutingapp.AndroidScoutingApp"
+    tools:showIn="@layout/android_scouting_app"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scouter"
+        android:textSize="40dp"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/EnterRobot"
+        android:id="@+id/btnEnterRobot"
+        android:onClick="clicked"
+        android:layout_marginTop="10dp"
+        android:hint="@string/EnterRobot"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.04" />
+    <!--
+        @string = just a regular string
+    -->
+    <!--
+        xml files: Order of appearance seemingly corresponds with similar order of appearance on application screen.
+        btn and prefixes for ids
+    -->
+    <!--
+    layout_below means that it is BELOW that specific layout.
+        @ "means refers from external file"
+        hint is primarily used in text messages.
+        strings autocomplete if in strings.xml file; also, CANNOT ACCESS XML IN .JAVA FILES!
+        strings are also good for referencing; better than hardcoding values.
+    -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ViewRobot"
+        android:id="@+id/btnViewRobot"
+        android:onClick="clicked"
+        android:layout_marginTop="10dp"
+        android:hint="@string/ViewRobot"
+        android:layout_below="@+id/Button"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.04" />
+
+    <!--
+        this is an xml comment
+    -->
+    <!--
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtenterRobotInfo"
+        android:layout_gravity="center_horizontal" />
+    -->
+    <!--
+    <TextView
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:text="Robot Info"
+        android:id="@+id/txtrobotInfo"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10" />
+    -->
+
+
+</LinearLayout>

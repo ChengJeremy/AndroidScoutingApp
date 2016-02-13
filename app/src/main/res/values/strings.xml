@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidScoutingApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="scouter">MHS VEX Scouter</string>
+    <string name="ViewRobot">View Robot</string>
+    <string name="EnterRobot">Enter Robot</string>
+    <string name="enterTeamName">Please enter the robot team information:</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_data_list">DataListActivity</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <!--
+        "wrap_content means that the LAYOUT WRAPS ITS CONTENTS. "
+        if width causes issues, down below.
+        and horizontal to display data in rows.
+    -->
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="75dp"
+        android:layout_height="200dp"
+        android:text="Robot Name: "
+        android:id="@+id/text_robot_name"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:text="Robot Description: "
+        android:id="@+id/text_robot_description"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        />
+
+</LinearLayout>
